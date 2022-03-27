@@ -1,0 +1,89 @@
+/* Import Cairo Font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;800&display=swap');
+
+/* Global Rules */
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+header{
+    background-color: blueviolet;
+    padding: 15px;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+header h1{
+    color: #FFF;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content{
+    padding-top: 10px;
+    background-color: rgb(148, 93, 199);
+    height: 100vh;
+}
+
+.content_wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.333%;
+}
+
+.item{
+    text-align: center;
+    width: 33%;
+    background-color: antiquewhite;
+    padding: 1rem 0;
+}
+
+.item:hover{
+    background-color: blueviolet;
+}
+
+.item:hover a{
+    color: #FFF;
+}
+
+.item a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #262626;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.item a span{
+    font-size: 3rem;
+}
+
+.item a p{
+    font-weight: 400;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .content{
+        height: auto;
+    }
+
+    .content_wrapper{
+        flex-direction: column;
+    }
+
+    .item{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
